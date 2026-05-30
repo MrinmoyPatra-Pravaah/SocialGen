@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+.venv/
+
+# Environment
+.env
+.env.local
+serviceAccountKey.json
+
+# Database
+*.db
+
+# Build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
