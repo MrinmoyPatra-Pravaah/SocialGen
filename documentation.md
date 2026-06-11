@@ -164,12 +164,16 @@ Generating a comprehensive 1500-word article alongside multiple platform caption
 
 ## 🌟 Core Features & Solution Showcase
 
+<img src="docs/screenshots/dashboard.png" alt="SocialGen Overview Dashboard" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
+
 ### 1. AI Copilot & Copywriter
 * **How it works**: The generation interface collects the content topic, keywords, target audience, content goals, and platform. It executes the background job which prompts the Gemini API.
 * **The Solution**: Produces a structured Markdown file that includes:
   - An attention-grabbing title.
   - A comprehensive intro, detailed body, actionable takeaways, and a conclusion.
   - Tailored social captions ready for Twitter, LinkedIn, and Instagram.
+
+<img src="docs/screenshots/copilot.png" alt="AI Copilot & Copywriter" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
 
 ```javascript
 // Prompt construction sample
@@ -192,6 +196,8 @@ const prompt = `
 * **How it works**: Brand voice preferences are stored on the user's profile as a JSON configuration.
 * **The Solution**: Before sending prompts to Gemini, the backend appends instructions mapping the user's brand parameters. This ensures the output maintains a consistent tone, includes key phrases, and excludes specific keywords.
 
+<img src="docs/screenshots/brand_voice.png" alt="Brand Voice Tuner" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
+
 ```json
 {
   "sliders": {
@@ -210,11 +216,15 @@ const prompt = `
 * **How it works**: A calendar dashboard provides an interactive view of all marketing campaigns.
 * **The Solution**: Users schedule campaigns specifying start/end dates, platform, frequency (Daily, Weekly, Bi-weekly), and goals. Scheduled items are displayed on a monthly view where users can add, reschedule, or cancel generation tasks.
 
+<img src="docs/screenshots/calendar.png" alt="Dynamic Campaign Calendar" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
+
 ### 4. Unified Social Inbox & Sentiment Monitoring
 * **How it works**: Combines incoming user comments across connected social media handles.
 * **The Solution**: Automatically classifies incoming comments into three sentiment categories (**Positive**, **Neutral**, **Negative**). 
   - **Starring System**: Flag critical queries or complaints that require team follow-up.
   - **Inline Reply Composer**: Post responses back to comments directly from the dashboard.
+
+<img src="docs/screenshots/social_inbox.png" alt="Unified Social Inbox & Sentiment Monitoring" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
 
 ### 5. Content Remixer
 * **How it works**: Adapts existing materials (such as a newsletter or a raw draft) into new formats.
@@ -224,9 +234,13 @@ const prompt = `
   - **Instagram**: Styled with high visual formatting cues.
   - **Newsletter**: Structured as a clean email digest.
 
+<img src="docs/screenshots/remixer.png" alt="Content Remixer" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
+
 ### 6. Hashtag Search Lab
 * **How it works**: Generates trending and relevant hashtags.
 * **The Solution**: Accepts a seed topic and categorizes recommendations into three tiers (High Reach, Medium Reach, and Niche) to help optimize visibility.
+
+<img src="docs/screenshots/hashtag_lab.png" alt="Hashtag Search Lab" width="100%" style="border-radius: 8px; margin-top: 10px; margin-bottom: 20px;" />
 
 ---
 
